@@ -1,7 +1,7 @@
-## Surface Pro 3 AutoHotkey
+# Surface Pro 3 AutoHotkey
 An AutoHotkey script to customize Surface Pro 3 pen buttons
 
-### Quick Start
+## Quick Start
 1. Create a new folder somewhere to store everything.
 2. Download AHKHID (`AHKHID.ahk`) from [https://raw.githubusercontent.com/jleb/AHKHID/master/AHKHID.ahk](https://raw.githubusercontent.com/jleb/AHKHID/master/AHKHID.ahk)
 3. Download `Pen.ahk` from above, and save it to the same folder.
@@ -12,7 +12,7 @@ An AutoHotkey script to customize Surface Pro 3 pen buttons
 5. Double-click `Pen.ahk` to run the script.
 6. Success!
 
-### Pen Events
+## Pen Events
 * `PEN_NOT_HOVERING`: The pen is away from the screen. This is only sometimes fired.
 * `PEN_HOVERING`: The pen is hovering above the screen.
 * `PEN_TOUCHING`: The pen is touching the screen.
@@ -23,7 +23,7 @@ An AutoHotkey script to customize Surface Pro 3 pen buttons
 
 Pen events are fired when the pen changes state. If you would like it to be fired continuously, change the line with `LimitPenCallback(proc)` to `PenCallback(proc)`.
 
-### Examples
+## Examples
 * **When clicking the 2nd button, do a right-click**
 
     Change the `PEN_2ND_BTN_HOVERING` section to the following:
@@ -65,6 +65,6 @@ Pen events are fired when the pen changes state. If you would like it to be fire
 
     We use the Else-If to find out when to release the middle click. If the last input was `PEN_1ST_BTN_HOVERING`, then we know we've changed states and we should release the key.
 
-### Acknowledgements
+## Acknowledgements
 * [TheGood (AHK Forums)](https://autohotkey.com/board/topic/38015-ahkhid-an-ahk-implementation-of-the-hid-functions/) / [jleb (Github)](https://github.com/jleb/AHKHID) for writing AHKHID.
 * [Randy31416 (AHK Forums)](https://autohotkey.com/boards/viewtopic.php?t=7589#p45235) for providing some good starting material.
