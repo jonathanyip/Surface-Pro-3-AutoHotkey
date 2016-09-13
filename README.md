@@ -56,7 +56,7 @@ Pen events are fired when the pen changes state. If you would like it to be fire
 
     Now when you click the 2nd button in Krita, the popup palette should show up!
 
-* **Do a middle-click drag while holding down the 1st button and hovering**
+* **While holding down the 1st button, click and hold the middle button**
 
     Change the `PEN_1ST_BTN_HOVERING` section to the following:
 
