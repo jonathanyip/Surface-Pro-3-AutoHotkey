@@ -33,6 +33,9 @@ Pen events are fired when the pen changes state. If you would like it to be fire
         Click right
     }
     ```
+
+    <sup>See [AutoHotkey Click](https://autohotkey.com/docs/commands/Click.htm) for reference.</sup>
+
 * **When clicking the 2nd button, press an imaginary function key**
 
     Change the `PEN_2ND_BTN_HOVERING` section to the following:
@@ -42,6 +45,8 @@ Pen events are fired when the pen changes state. If you would like it to be fire
         Send {F13} ; F13-F24 is the valid range
     }
     ```
+
+    <sup>See [AutoHotkey Send](https://autohotkey.com/docs/commands/Send.htm) for reference.</sup>
 
     Useful for drawing programs like [Krita](https://krita.org/), where you can map keys to do things.
 
@@ -62,6 +67,8 @@ Pen events are fired when the pen changes state. If you would like it to be fire
         Click Middle up
     }
     ```
+    
+    <sup>See [AutoHotkey Click](https://autohotkey.com/docs/commands/Click.htm) for reference.</sup>
 
     We use the Else-If to find out when to release the middle click. If the last input was `PEN_1ST_BTN_HOVERING`, then we know we've changed states and we should release the key.
 
