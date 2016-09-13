@@ -26,7 +26,7 @@ PenCallback(input) {
 
     }
 
-	if(input = PEN_1ST_BTN_TOUCHING) {
+    if(input = PEN_1ST_BTN_TOUCHING) {
 
     }
 
