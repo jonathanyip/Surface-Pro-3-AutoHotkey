@@ -5,7 +5,7 @@ An AutoHotkey script to customize Surface Pro 3 pen buttons
 1. Create a new folder somewhere to store everything.
 2. Download AHKHID (`AHKHID.ahk`) from [https://raw.githubusercontent.com/jleb/AHKHID/master/AHKHID.ahk](https://raw.githubusercontent.com/jleb/AHKHID/master/AHKHID.ahk)
 3. Download `Pen.ahk` from above, and save it to the same folder.
-4. Open `Pen.ahk` in your favorite text editor, and navigate to the section that starts with `PenCallback(input)`
+4. Open `Pen.ahk` in your favorite text editor, and navigate to the section that starts with `PenCallback()`
     * Inside of this function, you should see If statements that correspond to pen events.
     * Add any AutoHotkey commands you want inside of the curly brackets!
     * See the [examples](#examples) section for samples of things I tried.

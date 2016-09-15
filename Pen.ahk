@@ -1,3 +1,8 @@
+; Surface Pro 3 AutoHotkey
+; https://github.com/jonathanyip/Surface-Pro-3-AutoHotkey
+;
+; Last Updated: Sept. 14, 2016
+
 ; Set up our pen constants
 global PEN_NOT_HOVERING := 0x0      ; Pen is moved away from screen.
 global PEN_HOVERING := 0x1          ; Pen is hovering above screen.
