@@ -1,16 +1,16 @@
-; Surface Pro 3 AutoHotkey
-; https://github.com/jonathanyip/Surface-Pro-3-AutoHotkey
+; Surface Pro 7 AutoHotkey
+; Original Project: https://github.com/jonathanyip/Surface-Pro-3-AutoHotkey
 ;
-; Last Updated: Sept. 14, 2016
+; Last Updated: January 19, 2022
 
 ; Set up our pen constants
+global PEN_HOVERING := 0x04          ; Pen is hovering above screen.
+global PEN_1ST_BTN_HOVERING := 0x0C  ; 1st button is pressed.
+global PEN_2ND_BTN_HOVERING := 0x24  ; 2nd button is pressed.
+global PEN_TOUCHING := 0x05          ; Pen is touching screen.
+global PEN_1ST_BTN_TOUCHING := 0x1C  ; 1st button is pressed, pen is touching screen.
+global PEN_2ND_BTN_TOUCHING := 0x25  ; 3nd button is pressed, pen is touching screen.
 global PEN_NOT_HOVERING := 0x0      ; Pen is moved away from screen.
-global PEN_HOVERING := 0x1          ; Pen is hovering above screen.
-global PEN_TOUCHING := 0x3          ; Pen is touching screen.
-global PEN_1ST_BTN_HOVERING := 0x9  ; 1st button is pressed.
-global PEN_1ST_BTN_TOUCHING := 0x11 ; 1st button is pressed, pen is touching screen.
-global PEN_2ND_BTN_HOVERING := 0x5  ; 2nd button is pressed.
-global PEN_2ND_BTN_TOUCHING := 0x7  ; 3nd button is pressed, pen is touching screen.
 
 ; Respond to the pen inputs
 ; Fill this section with your favorite AutoHotkey scripts!
@@ -78,7 +78,7 @@ InputMsg(wParam, lParam) {
         inputData := AHKHID_GetInputData(lParam, uData)
 
         raw := NumGet(uData, 0, "UInt")
-        proc := (raw >> 8) & 0x1F
+        proc := (raw >> 24) 
 
         LimitPenCallback(proc)
     }
